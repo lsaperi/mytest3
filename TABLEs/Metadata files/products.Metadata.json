@@ -8,7 +8,7 @@
       "COLUMN_COMMENT": "",
       "COLUMN_DEFAULT": null,
       "COLUMN_KEY": "PRI",
-      "COLUMN_NAME": "order_id",
+      "COLUMN_NAME": "id",
       "COLUMN_TYPE": "int",
       "DATA_TYPE": "int",
       "DATETIME_PRECISION": null,
@@ -17,7 +17,7 @@
       "IS_NULLABLE": "NO",
       "NUMERIC_PRECISION": 10,
       "NUMERIC_SCALE": 0,
-      "obj": "orders",
+      "obj": "products",
       "ORDINAL_POSITION": 1,
       "PRIVILEGES": "select,insert,update,references",
       "SRS_ID": null,
@@ -31,8 +31,8 @@
       "COLLATION_NAME": "utf8mb4_0900_ai_ci",
       "COLUMN_COMMENT": "",
       "COLUMN_DEFAULT": null,
-      "COLUMN_KEY": "MUL",
-      "COLUMN_NAME": "customer_name",
+      "COLUMN_KEY": "",
+      "COLUMN_NAME": "name",
       "COLUMN_TYPE": "varchar(100)",
       "DATA_TYPE": "varchar",
       "DATETIME_PRECISION": null,
@@ -41,32 +41,8 @@
       "IS_NULLABLE": "YES",
       "NUMERIC_PRECISION": null,
       "NUMERIC_SCALE": null,
-      "obj": "orders",
+      "obj": "products",
       "ORDINAL_POSITION": 2,
-      "PRIVILEGES": "select,insert,update,references",
-      "SRS_ID": null,
-      "TABLE_CATALOG": "def",
-      "type": "TABLE"
-    },
-    {
-      "CHARACTER_MAXIMUM_LENGTH": null,
-      "CHARACTER_OCTET_LENGTH": null,
-      "CHARACTER_SET_NAME": null,
-      "COLLATION_NAME": null,
-      "COLUMN_COMMENT": "",
-      "COLUMN_DEFAULT": null,
-      "COLUMN_KEY": "",
-      "COLUMN_NAME": "order_date",
-      "COLUMN_TYPE": "date",
-      "DATA_TYPE": "date",
-      "DATETIME_PRECISION": null,
-      "EXTRA": "",
-      "GENERATION_EXPRESSION": "",
-      "IS_NULLABLE": "YES",
-      "NUMERIC_PRECISION": null,
-      "NUMERIC_SCALE": null,
-      "obj": "orders",
-      "ORDINAL_POSITION": 3,
       "PRIVILEGES": "select,insert,update,references",
       "SRS_ID": null,
       "TABLE_CATALOG": "def",
@@ -78,7 +54,7 @@
       "CHECK_CLAUSE": null,
       "Columns": [
         {
-          "COLUMN_NAME": "order_id",
+          "COLUMN_NAME": "id",
           "CONSTRAINT_CATALOG": "def",
           "CONSTRAINT_NAME": "PRIMARY",
           "ORDINAL_POSITION": 1,
@@ -86,7 +62,7 @@
           "REFERENCED_COLUMN_NAME": null,
           "REFERENCED_TABLE_NAME": null,
           "REFERENCED_TABLE_SCHEMA": null,
-          "TABLE_NAME": "orders"
+          "TABLE_NAME": "products"
         }
       ],
       "CONSTRAINT_CATALOG": "def",
@@ -94,7 +70,7 @@
       "CONSTRAINT_TYPE": "PRIMARY KEY",
       "DELETE_RULE": null,
       "ENFORCED": "YES",
-      "obj": "orders",
+      "obj": "products",
       "type": "TABLE",
       "UPDATE_RULE": null
     }
@@ -105,48 +81,11 @@
       "AVG_ROW_LENGTH": 0,
       "CREATE_OPTIONS": "",
       "MAX_DATA_LENGTH": 0,
-      "obj": "orders",
+      "obj": "products",
       "TABLE_COLLATION": "utf8mb4_0900_ai_ci",
       "TABLE_COMMENT": "",
       "type": "TABLE"
     }
   ],
-  "Indexes": [
-    {
-      "Columns": [
-        {
-          "COLLATION": "A",
-          "COLUMN_NAME": "customer_name",
-          "INDEX_NAME": "idx_customer_name",
-          "obj": "orders",
-          "SEQ_IN_INDEX": 1
-        }
-      ],
-      "INDEX_NAME": "idx_customer_name",
-      "INDEX_TYPE": "BTREE",
-      "IS_VISIBLE": "YES",
-      "NON_UNIQUE": 1,
-      "obj": "orders",
-      "TABLE_CATALOG": "def",
-      "type": "TABLE"
-    },
-    {
-      "Columns": [
-        {
-          "COLLATION": "A",
-          "COLUMN_NAME": "customer_name",
-          "INDEX_NAME": "idx_customer_name2",
-          "obj": "orders",
-          "SEQ_IN_INDEX": 1
-        }
-      ],
-      "INDEX_NAME": "idx_customer_name2",
-      "INDEX_TYPE": "BTREE",
-      "IS_VISIBLE": "YES",
-      "NON_UNIQUE": 1,
-      "obj": "orders",
-      "TABLE_CATALOG": "def",
-      "type": "TABLE"
-    }
-  ]
+  "Indexes": []
 }
